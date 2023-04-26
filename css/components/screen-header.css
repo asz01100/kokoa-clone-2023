@@ -14,3 +14,28 @@
 .screen-header__icons span {
     margin-left: 25px;
 }
+
+.gear-notification {
+    background-color: #FF6229;
+    width: 8px;
+    height: 8px;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    position:absolute;
+    right: 17px;
+    top: 45px;
+}
+
+@keyframes rotateGear {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.screen-header .fa-gear:hover{
+    animation: rotateGear 2000ms linear infinite;
+}
